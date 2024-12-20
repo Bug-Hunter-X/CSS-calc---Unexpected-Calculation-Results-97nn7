@@ -1,0 +1,14 @@
+/* bugSolution.css */
+#container {
+  width: 500px; /* Example container width */
+}
+
+#element {
+  width: calc(min(100% - 200px, 300px)); /* Use min() to prevent negative width */
+  /* Alternative using clamp(): */
+  /* width: clamp(0, 100% - 200px, 300px); */
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* This ensures the width is at least 0, and at most 300px, if the remaining space after subtracting 200px is bigger */
